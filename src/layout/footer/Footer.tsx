@@ -1,11 +1,25 @@
 import React from 'react';
+import styled from "styled-components";
+import {FlexWrapper} from "../../components/FlexWrapper";
+import {SocialList} from "../../components/SocialList";
 
 export const Footer = () => {
    return (
-      <div>
-
-      </div>
+      <StyledFooter>
+         <FlexWrapper direction={"column"} align={"center"}>
+            <Name>Andrey</Name>
+            <SocialList/>
+            <Copyright>© 2024 Andrey Urazaev, All Rights Reserved.</Copyright>
+         </FlexWrapper>
+      </StyledFooter>
    );
 };
 
-Footer;
+const StyledFooter = styled.footer`
+    background-color: #529f9d;
+    min-height: 20vh;
+`
+
+const Name = styled.span``
+
+const Copyright = styled.small``

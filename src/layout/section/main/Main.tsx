@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import photo from './../../assets/images/photo_Andrey.webp'
-import {FlexWrapper} from "../../components/FlexWrapper";
+import photo from '../../../assets/images/photo_Andrey.webp'
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const Main = () => {
    return (
@@ -14,9 +14,9 @@ export const Main = () => {
                <MainTitle>
                   Frontend Developer
                </MainTitle>
-               <span>
-                  Перестраиваю свою жизни по философии: <q>Займись тем, что тебе нравится, и ты не будешь работать ни дня в своей жизни!</q>
-               </span>
+               <AboutMe>
+                  Здесь я позже добавлю какой-нибудь небольшой текст описание о себе
+               </AboutMe>
                <a href="#">Let`s Begin</a>
             </TextBlock>
             <Photo src={photo} alt="photo is undefined"/>
@@ -26,19 +26,19 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-    min-height: 100vh;
-    background-color: #0F1624;
-    color: #fff;
+    min-height: 450px;
+    background-color: #727cb7;
 `
+const TextBlock = styled.div``
+
+const Name = styled.h2``
+
+const MainTitle = styled.h1``
+
+const AboutMe = styled.p``
 
 const Photo = styled.img`
     width: 380px;
     height: 450px;
     object-fit: cover;
 `
-
-const TextBlock = styled.div``
-
-const MainTitle = styled.h1``
-
-const Name = styled.h2``
