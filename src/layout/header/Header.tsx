@@ -1,23 +1,34 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
 import {SocialList} from "../../components/SocialList";
+import {Container} from "../../components/container";
+import {FlexWrapper} from "../../components/FlexWrapper";
+import {myTheme} from "../../styles/Theme";
+import {HeaderMenu} from "./headerMenu/headerMenu";
 
 const items = ["Projects", "Technologies", "About me"]
 
 export const Header = () => {
    return (
       <StyledHeader>
-         <Logo/>
-         <Menu menuItems={items}/>
-         <SocialList/>
+         <Container>
+            <FlexWrapper justify={"space-between"} align={"center"}>
+               <Logo/>
+               <HeaderMenu menuItems={items}/>
+               <SocialList/>
+            </FlexWrapper>
+         </Container>
       </StyledHeader>
    );
 };
 
 const StyledHeader = styled.header`
-    background-color: #80b488;
-    display: flex;
-    justify-content: space-between;
+    background-color: ${myTheme.colors.primaryBg};
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
 `

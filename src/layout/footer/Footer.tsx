@@ -9,7 +9,7 @@ export const Footer = () => {
          <FlexWrapper direction={"column"} align={"center"}>
             <Name>Andrey</Name>
             <SocialList/>
-            <Copyright>© 2024 Andrey Urazaev, All Rights Reserved.</Copyright>
+            <Copyright>© 2024 Andrey Urazaev, All Rights Not Reserved.</Copyright>
          </FlexWrapper>
       </StyledFooter>
    );
@@ -17,7 +17,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     background-color: #529f9d;
-    min-height: 20vh;
+    min-height: 15vh;
 `
 
 const Name = styled.span``

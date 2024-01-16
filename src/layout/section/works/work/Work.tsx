@@ -5,6 +5,7 @@ type WorkPropsType = {
    title: string
    text: string
    src: string
+   link: string
 }
 
 export const Work = (props: WorkPropsType) => {
@@ -13,7 +14,7 @@ export const Work = (props: WorkPropsType) => {
          <Image src={props.src} alt=""/>
          <Title>{props.title}</Title>
          <Text>{props.text}</Text>
-         <Link>Look It Up</Link>
+         <Link href={props.link}>Look It Up</Link>
       </StyledWork>
    );
 };
