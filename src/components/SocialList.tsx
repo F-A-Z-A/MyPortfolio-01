@@ -31,4 +31,8 @@ const StyledSocialList = styled.ul`
 
 const SocialItem = styled.li``
 
-const SocialLink = styled.a``
+const SocialLink = styled.a`
+    &:hover {
+        color: #13ADC7;
+    }
+`

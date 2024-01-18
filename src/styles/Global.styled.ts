@@ -23,6 +23,8 @@ export const GlobalStyled = createGlobalStyle`
 
     a {
         text-decoration: none;
+        color: ${myTheme.colors.font};
+        cursor: pointer;
     }
 
     ul {
@@ -44,5 +46,15 @@ export const GlobalStyled = createGlobalStyle`
 
     section:nth-of-type(even) {
         background-color: ${myTheme.colors.secondaryBg};
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
     }
 `

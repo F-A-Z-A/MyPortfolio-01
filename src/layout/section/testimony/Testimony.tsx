@@ -10,14 +10,11 @@ export const Testimony = () => {
       <StyledTestimony>
          <SectionTitle>Testimony</SectionTitle>
          <FlexWrapper direction={"column"} align={"center"}>
-            <Icon iconId={"vectorIcon"}/>
+            <Icon iconId={"vectorIcon"} width="105" height="100" viewBox="0 0 105 100"/>
             <Slider/>
          </FlexWrapper>
       </StyledTestimony>
    );
 };
 
-const StyledTestimony = styled.section`
-    min-height: 40vh;
-    background-color: #ece8a8;
-`
+const StyledTestimony = styled.section``
