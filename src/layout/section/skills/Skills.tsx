@@ -15,7 +15,7 @@ export const Skills = () => {
                <Skill iconId={"cssIcon"} skillTitle={"CSS"} width="120" height="119" viewBox="0 0 120 119"/>
                <Skill iconId={"jsIcon"} skillTitle={"JavaScript"} width="120" height="120" viewBox="0 0 120 120"/>
                <Skill iconId={"reactIcon"} skillTitle={"REACT"} width="113" height="101" viewBox="0 0 113 101"/>
-               <Skill iconId={"vectorIcon"} skillTitle={"Vector"} width="105" height="100" viewBox="0 0 105 100"/>
+               <Skill iconId={"reduxIcon"} skillTitle={"Redux"} width="105" height="100" viewBox="0 0 105 100"/>
                <Skill iconId={"bootstrapIcon"} skillTitle={"Bootstrap"} width="88" height="87" viewBox="0 0 88 87"/>
                <Skill iconId={"tailwindIcon"} skillTitle={"Tailwind"} width="131" height="131" viewBox="0 20 131 131"/>
                <Skill iconId={"sassIcon"} skillTitle={"SASS"} width="117" height="87" viewBox="0 0 117 87"/>

@@ -30,4 +30,5 @@ const StyledSkill = styled.div`
 
 const SkillTitle = styled.h2`
     font-size: 20px;
+    text-transform: uppercase;
 `

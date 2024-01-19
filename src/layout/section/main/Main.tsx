@@ -36,7 +36,7 @@ const StyledMain = styled.section`
     display: flex;
 `
 const TextBlock = styled.div`
-    text-align: start;
+    //text-align: start;
 `
 
 const Name = styled.h2`
@@ -79,6 +79,6 @@ const Photo = styled.img`
     height: 450px;
     object-fit: cover;
 
-    border-radius: 50px 0px;
+    border-radius: 50px 0;
     border: 5px solid #8643DC;
 `
