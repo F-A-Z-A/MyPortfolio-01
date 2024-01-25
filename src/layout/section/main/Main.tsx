@@ -5,12 +5,13 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/container";
 import {Button} from "../../../components/Button";
 import {myTheme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
    return (
       <StyledMain>
          <Container>
-            <FlexWrapper align={"center"} justify={"space-between"}>
+            <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
                <TextBlock>
                   <Name>
                      I am <span>Andrey Urazaev</span>
@@ -36,17 +37,18 @@ const StyledMain = styled.section`
     display: flex;
 `
 const TextBlock = styled.div`
-    //text-align: start;
+    text-align: start;
 `
 
 const Name = styled.h2`
-    font-size: 48px;
-    font-weight: 600;
+    ${font({family: "Poppins, sans-serif", weight: 600, Fmax: 48, Fmin: 36})}
+
     margin-bottom: 15px;
 
     span {
         position: relative;
         z-index: 0;
+        white-space: nowrap;
 
         &::before {
             content: "";
@@ -63,9 +65,10 @@ const Name = styled.h2`
 `
 
 const MainTitle = styled.h1`
-    font-size: 27px;
-    font-weight: 400;
+    ${font({weight: 400, Fmax: 27, Fmin: 20})}
+
     margin-bottom: 15px;
+
 `
 
 const AboutMe = styled.p`
@@ -81,4 +84,9 @@ const Photo = styled.img`
 
     border-radius: 50px 0;
     border: 5px solid #8643DC;
+
+    @media ${myTheme.media.mobile} {
+        width: 310px;
+        height: 380px;
+    }
 `

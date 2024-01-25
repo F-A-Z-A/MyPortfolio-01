@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import {myTheme} from "../styles/Theme";
+import {font} from "../styles/Common";
 
 export const SectionTitle = styled.h2`
+    ${font({family: "'Poppins', sans-serif", weight: 600, Fmax: 46, Fmin: 40})}
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 46px;
-    font-weight: 600;
     margin-bottom: 100px;
 
     position: relative;
@@ -21,5 +20,9 @@ export const SectionTitle = styled.h2`
         left: 50%;
         bottom: -30px;
         transform: translateX(-50%);
+
+        @media ${myTheme.media.mobile} {
+            bottom: -24px;
+        }
     }
 `

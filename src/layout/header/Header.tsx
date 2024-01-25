@@ -6,6 +6,7 @@ import {Container} from "../../components/container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {myTheme} from "../../styles/Theme";
 import {HeaderMenu} from "./headerMenu/headerMenu";
+import {MobileMenu} from "./mobileMenu/mobileMenu";
 
 const items = ["Projects", "Technologies", "About me"]
 
@@ -16,6 +17,7 @@ export const Header = () => {
             <FlexWrapper justify={"space-between"} align={"center"}>
                <Logo/>
                <HeaderMenu menuItems={items}/>
+               <MobileMenu menuItems={items}/>
                <SocialList/>
             </FlexWrapper>
          </Container>
@@ -31,4 +33,10 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     z-index: 99999;
+
+    // SocialList {
+    //     @media screen and (max-width: 900px) {
+    //         display: none;
+    //     }
+    // }
 `
